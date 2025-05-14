@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Juego de Palabras Ordenadas</title>
+    <link rel="stylesheet" href="styles.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
@@ -42,7 +43,6 @@
     <div class="text-sm font-normal">Juego reiniciado.</div>
 </div>
 
-<!-- Modal -->
 <div id="winModal" tabindex="-1" aria-hidden="true"
      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full bg-black/50">
     <div class="relative p-4 w-full max-w-md h-full md:h-auto m-auto flex items-center">
@@ -130,7 +130,7 @@
 
     resetBtn.addEventListener('click', () => {
         initGame();
-        completedList.innerHTML = ''; // ✅ Limpia la lista de palabras completadas
+        completedList.innerHTML = '';
         showToast();
     });
     modalOkBtn.addEventListener('click', () => {
