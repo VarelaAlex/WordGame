@@ -1,0 +1,16 @@
+{
+  "name": "wordgame",
+  "version": "1.0.0",
+  "main": "src/script.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./src/styles.css --minify"
+  },
+  "private": true,
+  "devDependencies": {
+    "sortablejs": "^1.15.6",
+    "tailwindcss": "^4.1.6"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6"
+  }
+}
